@@ -1,0 +1,42 @@
+t2m:
+  mean: 280.
+  std: 30.
+d2m:
+  mean: 275.
+  std: 30.
+t850:
+  mean: 270.
+  std: 25.
+z500:
+  mean: 52000.
+  std: 5000.
+u700:
+  mean: 0.
+  std: 50.
+v700:
+  mean: 0.
+  std: 50.
+blh:
+  mean: 600
+  std: 400
+tcc:
+  mean: 0.
+  std: 1.
+tcw:
+  mean: 0.
+  std: 30.
+tp:
+  mean: 0.
+  std: 6.
+  log_epsilon: 1e-4
+cp:
+  mean: 0.
+  std: 6.
+  log_epsilon: 1e-4
+ncp:
+  mean: 0.
+  std: 6.
+  log_epsilon: 1e-4
+cape:
+  mean: 0.
+  std: 1000.

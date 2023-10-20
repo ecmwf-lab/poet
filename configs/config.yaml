@@ -1,0 +1,18 @@
+defaults:
+  - _self_
+  - data: lead168_by12
+  - model: transformer_unet
+  - trainer: default
+  - training: default
+  - callbacks:
+      - early_stopping
+      - learning_rate_monitor
+      - model_checkpoint
+      - save_before_start
+      - progress_bar
+  - logger:
+      - tensorboard
+
+experiment_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+seed: 0
+checkpoint_path: null

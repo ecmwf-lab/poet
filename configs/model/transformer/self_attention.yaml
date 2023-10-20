@@ -1,0 +1,12 @@
+axial_attention: false
+n_heads: 8
+activation: torch.nn.ReLU
+layer_norm: true
+batch_norm: false
+value_layer: true
+key_activation: torch.nn.ReLU
+stride: 3
+reweighter:
+  _target_: ens_transformer.layers.attention.StateReweighter
+weight_estimator:
+  _target_: ens_transformer.layers.attention.SoftmaxWeights

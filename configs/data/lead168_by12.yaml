@@ -1,0 +1,35 @@
+defaults:
+  - module: verified_ensemble
+  - scaling: hindcast
+  - splits: default
+
+directory: /ecmwfcollab/hindcastzarr/poet_2
+variables:
+  - t2m
+  - t850
+  - z500
+constants:
+  land_sea_mask: lsm
+  topography: z_scaled
+input_lead_times:
+  - 12
+  - 24
+  - 36
+  - 48
+  - 60
+  - 72
+  - 84
+  - 96
+  - 108
+  - 120
+  - 132
+  - 144
+  - 156
+  - 168
+target_variable: ERA5_2mt_c100
+ens_mems: 11
+grid_dims:
+  - 181
+  - 360
+add_lead_time: false
+add_insolation: false

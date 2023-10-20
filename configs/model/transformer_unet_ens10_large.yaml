@@ -1,0 +1,31 @@
+defaults:
+  - embedding: unet_ens10
+  - optimizer: adam
+  - output: unet_ens10
+  - scheduler: plateau
+  - transformer: self_attention
+  - _self_
+
+_recursive_: False
+_target_: poet.models.transformer_unet.TransformerUnet
+n_transformers: 1
+transformer_depth: 4
+output_channels: 1
+loss_str: crps
+latitude_weighting: true
+learning_rate: ${learning_rate}
+ens_mems: ${data.ens_mems}
+grid_dims: ${data.grid_dims}
+
+embedding:
+  n_channels:
+    - 16
+    - 32
+    - 64
+    - 128
+output:
+  n_channels:
+    - 128
+    - 64
+    - 32
+    - 16

@@ -1,0 +1,10 @@
+_target_: poet.layers.unet.UnetDecoder
+n_channels:
+  - 64
+  - 32
+  - 16
+  - 8
+convolutions_per_depth: 2
+kernel_size: 3
+pooling: 2
+activation: torch.nn.ReLU

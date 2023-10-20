@@ -1,0 +1,13 @@
+_target_: poet.data.modules.ForecastDataModule
+directory: ${data.directory}
+batch_size: ${batch_size}
+variables: ${data.variables}
+input_lead_times: ${data.input_lead_times}
+target_lead_times: ${data.target_lead_times}
+shuffle: true
+number_as_sample: false
+splits: ${data.splits}
+subsample_size: ${data.ens_mems}
+grid_dims: ${data.grid_dims}
+num_workers: ${num_workers}
+pin_memory: true

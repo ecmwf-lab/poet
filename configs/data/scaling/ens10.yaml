@@ -1,0 +1,63 @@
+d850:
+  mean: 0.
+  std: 2e-5
+q850:
+  mean: 0.0045
+  std: 0.0045
+t850:
+  mean: 275.
+  std: 15.
+u850:
+  mean: 0.
+  std: 10.
+v850:
+  mean: 0.
+  std: 10.
+w850:
+  mean: 0.
+  std: 0.2
+z850:
+  mean: 14000.
+  std: 1500.
+d500:
+  mean: 0.
+  std: 2e-5
+q500:
+  mean: 1e-3
+  std: 1e-3
+t500:
+  mean: 255
+  std: 15
+u500:
+  mean: 0.
+  std: 15.
+v500:
+  mean: 0.
+  std: 15.
+w500:
+  mean: 0.
+  std: 0.2
+z500:
+  mean: 54000.
+  std: 3500.
+t2m:
+  mean: 280.
+  std: 30.
+tcc:
+  mean: 0.
+  std: 1.
+msl:
+  mean: 1013.
+  std: 25.
+skt:
+  mean: 280.
+  std: 30.
+sst:
+  mean: 280.
+  std: 30.
+u10:
+  mean: 0.
+  std: 10.
+v10:
+  mean: 0.
+  std: 10.

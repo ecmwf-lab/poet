@@ -1,0 +1,17 @@
+defaults:
+  - data: ifs_era
+  - hydra: default
+  - model: transformer
+  - trainer: default
+  - training: default
+  - callbacks:
+      - early_stopping
+      - learning_rate_monitor
+      - model_checkpoint
+      - save_before_start
+  - logger:
+      - tensorboard
+
+exp_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+logging_level: DEBUG
+seed: 42

@@ -1,0 +1,30 @@
+defaults:
+  - module: verified_ensemble
+  - scaling: ens10
+  - splits: ens10
+
+directory: /ecmwfcollab/hindcastzarr/poet_e10
+variables:
+  - d850
+  - q850
+  - t850
+  - u850
+  - v850
+  - w850
+  - z850
+constants: null
+input_lead_times:
+  - 24
+  - 48
+target_variable: ERA5_t850
+ens_mems:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+grid_dims:
+  - 361
+  - 720
+add_lead_time: false
+add_insolation: false

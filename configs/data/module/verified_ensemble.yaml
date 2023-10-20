@@ -1,0 +1,16 @@
+_target_: poet.data.modules.VerifiedEnsembleDataModule
+directory: ${data.directory}
+batch_size: ${batch_size}
+variables: ${data.variables}
+input_lead_times: ${data.input_lead_times}
+target_variable: ${data.target_variable}
+constants: ${data.constants}
+shuffle: true
+scaling: ${data.scaling}
+splits: ${data.splits}
+subsample_size: ${data.ens_mems}
+add_lead_time: ${data.add_lead_time}
+add_insolation: ${data.add_insolation}
+grid_dims: ${data.grid_dims}
+num_workers: ${num_workers}
+pin_memory: true

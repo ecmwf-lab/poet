@@ -1,0 +1,9 @@
+n_heads: 64
+activation: torch.nn.ReLU
+layer_norm: true
+value_layer: true
+key_activation: torch.nn.ReLU
+reweighter:
+  _target_: ens_transformer.layers.attention.StateReweighter
+weight_estimator:
+  _target_: ens_transformer.layers.attention.SoftmaxWeights

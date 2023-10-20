@@ -1,0 +1,14 @@
+defaults:
+  - embedding: default
+  - optimizer: adam
+  - scheduler: plateau
+  - transformer: self_attention
+
+_recursive_: False
+_target_: ens_transformer.models.transformer_net.TransformerNet
+n_transformers: 1
+output_channels: 1
+loss_str: crps
+learning_rate: ${learning_rate}
+ens_mems: ${data.ens_mems}
+grid_dims: ${data.grid_dims}
